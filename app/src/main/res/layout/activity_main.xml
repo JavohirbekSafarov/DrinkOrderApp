@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/back">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@android:drawable/alert_light_frame"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        android:elevation="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your drink:"
+            android:textSize="30sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:scrollbars="vertical"
+        >
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/layoutCola"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="150dp"
+                            android:layout_marginHorizontal="35dp"
+                            android:layout_marginVertical="10dp"
+                            android:rotation="12"
+                            android:src="@drawable/cola" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/holo_red_dark"
+                                android:textSize="20sp"
+                                android:text="CocaCola" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price: 5 $"
+                                android:textSize="15sp"
+                                android:textColor="@android:color/holo_green_dark"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/colaCheck"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/checked"
+                        android:layout_margin="10dp"
+                        android:visibility="invisible"
+                        android:layout_gravity="end|bottom"/>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/layoutPepsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="150dp"
+                            android:layout_marginHorizontal="35dp"
+                            android:layout_marginVertical="10dp"
+                            android:rotation="12"
+                            android:src="@drawable/pepsi" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/holo_blue_dark"
+                                android:textSize="20sp"
+                                android:text="Pepsi" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price: 6 $"
+                                android:textSize="15sp"
+                                android:textColor="@android:color/holo_green_dark"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/pepsiCheck"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/checked"
+                        android:layout_margin="10dp"
+                        android:visibility="invisible"
+                        android:layout_gravity="end|bottom"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/layoutFanta"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="150dp"
+                            android:layout_marginHorizontal="35dp"
+                            android:layout_marginVertical="10dp"
+                            android:rotation="12"
+                            android:src="@drawable/fanta" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/holo_orange_dark"
+                                android:textSize="20sp"
+                                android:text="Fanta" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price: 7 $"
+                                android:textSize="15sp"
+                                android:textColor="@android:color/holo_green_dark"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/fantaCheck"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/checked"
+                        android:visibility="invisible"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="end|bottom"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/layoutSprite"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="150dp"
+                            android:layout_marginHorizontal="35dp"
+                            android:layout_marginVertical="10dp"
+                            android:rotation="12"
+                            android:src="@drawable/sprite" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/holo_blue_bright"
+                                android:textSize="20sp"
+                                android:text="Sprite" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price: 5 $"
+                                android:textSize="15sp"
+                                android:textColor="@android:color/holo_green_dark"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/spriteCheck"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/checked"
+                        android:visibility="invisible"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="end|bottom"/>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        app:cardCornerRadius="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price 0 $"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="25dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_green_dark"
+            />
+        <ImageView
+            android:id="@+id/orderImgBtn"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/order"
+            android:layout_gravity="end|bottom"
+            />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
